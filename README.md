@@ -14,6 +14,10 @@ Usage
 
 ### Step 1: Installation
 
+#### Via [PowerShell Gallery](https://www.powershellgallery.com/packages/PSCode) (Powershell v5 required)
+
+    Install-Module -Name PSCode
+
 #### Via GitHub (PowerShell v3+ required)
 
 Clone or download this repo to `$env:homepath\documents\WindowsPowerShell\Modules`
