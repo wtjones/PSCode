@@ -45,3 +45,13 @@ Try it from a network path:
 ```
 code \\MyNas\docs
 ```
+
+
+Optional
+--------
+
+If using a portable install of VS Code, specify the folder when loading the module:
+
+```
+import-module PSCode -ArgumentList 'D:\downloads\VSCode-win32-1.11.2'
+```

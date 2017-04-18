@@ -12,7 +12,7 @@
 RootModule = 'PSCode.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.0.1'
 
 # ID used to uniquely identify this module
 GUID = '3ce656ae-939c-43d6-afd0-f907822545a0'
