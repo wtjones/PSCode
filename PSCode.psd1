@@ -12,7 +12,7 @@
 RootModule = 'PSCode.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.1'
+ModuleVersion = '1.0.2'
 
 # ID used to uniquely identify this module
 GUID = '3ce656ae-939c-43d6-afd0-f907822545a0'
@@ -95,7 +95,7 @@ PrivateData = @{
         Tags = @('vscode', 'VisualStudioCode', 'UNC')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+         LicenseUri = 'https://raw.githubusercontent.com/wtjones/PSCode/master/LICENSE.txt'
 
         # A URL to the main website for this project.
         ProjectUri = 'https://github.com/wtjones/PSCode'
