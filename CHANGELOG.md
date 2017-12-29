@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+### Added
+- Close [#3](https://github.com/wtjones/PSCode/issues/3) support 1.19 feature "Pipe output directly into VS Code"
 ### Changed
 - Resolve [#4](https://github.com/wtjones/PSCode/issues/4) allow additional args to pass to code.exe
 
