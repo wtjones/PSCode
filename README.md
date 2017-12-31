@@ -6,7 +6,7 @@ Overview
 
 [VS Code](https://code.visualstudio.com/) currently uses `code.cmd` for shell duties. The drawback is [this issue](https://github.com/Microsoft/vscode/issues/14529), related to the limitations of `cmd.exe` and UNC paths. 
 
-PSCode aliases the familar `code` to run a cmdlet that launches the editor in a powershell context. The behavior of `code.cmd` is maintained (as of 1.11).
+PSCode aliases the familar `code` to run a cmdlet that launches the editor in a powershell context. The behavior of `code.cmd` is maintained (as of 1.19.1).
 
 
 Usage
