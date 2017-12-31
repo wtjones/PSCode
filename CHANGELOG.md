@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+
+## [1.0.4] - 2017-12-30
 ### Added
 - Close [#5](https://github.com/wtjones/PSCode/issues/5) support 64-bit
 - Close [#2](https://github.com/wtjones/PSCode/issues/2) determine VS Code's path in a proper way
