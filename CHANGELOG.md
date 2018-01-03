@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+### Changed
+- Close [#6](https://github.com/wtjones/PSCode/issues/6) collect pipe input and write to a unique file
 
 ## [1.0.4] - 2017-12-30
 ### Added
