@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+### Changed
+- Powershell 3 is now supported again.
 
 ## [1.0.5] - 2018-01-02
 ### Changed

@@ -35,7 +35,7 @@ function Invoke-VSCode() {
         $env:VSCODE_DEV = $null
 
         if ($inputObject) {
-            $pipeTempPath = (join-path $env:TEMP ("pscode-stdin-{0}.txt" -f (New-Guid).Guid))
+            $pipeTempPath = (join-path $env:TEMP ("pscode-stdin-{0}.txt" -f [System.GUID]::NewGuid().ToString()))
             Write-Verbose "Writing out piped input to file $pipeTempPath"
             $inputObjects | out-file $pipeTempPath -Encoding ascii        
             Start-Process -FilePath $codePath -ArgumentList $codeArgs -RedirectStandardInput $pipeTempPath
