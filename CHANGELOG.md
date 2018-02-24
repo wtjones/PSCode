@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
+## [1.0.7] - 2018-02-24
+### Changed
+- Close [#7](https://github.com/wtjones/PSCode/issues/7) args are properly quoted
+
 ## [1.0.6] - 2018-01-03
 ### Changed
 - Powershell 3 is now supported again.

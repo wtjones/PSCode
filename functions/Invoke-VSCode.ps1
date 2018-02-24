@@ -19,8 +19,10 @@ function Invoke-VSCode() {
 
         $codePath = join-path $script:vscodePath 'code.exe'
         $resourcePath = join-path $script:vscodePath 'resources\app\out\cli.js'
-
-        $codeArgs = @(('"{0}"' -f $resourcePath)) + $allArgs | select -uniq
+        $allArgsQuoted = $allArgs | %{
+            if ($_ -like '* *') {'"{0}"' -f $_ } else {$_}
+        }
+        $codeArgs = @(('"{0}"' -f $resourcePath)) + $allArgsQuoted | select -uniq
         Write-Verbose ("Launching VSCode with args:`n{0}" -f ($codeArgs | convertTo-json))
     }
     PROCESS { 
