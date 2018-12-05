@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+### Changed
+- Close [#10](https://github.com/wtjones/PSCode/issues/10) Passing an array of files behaves differently than code.exe
 
 ## [1.0.7] - 2018-02-24
 ### Changed
