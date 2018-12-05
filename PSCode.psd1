@@ -12,7 +12,7 @@
 RootModule = 'PSCode.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.7'
+ModuleVersion = '1.0.8'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -27,7 +27,7 @@ Author = 'William T Jones'
 CompanyName = 'Unknown'
 
 # Copyright statement for this module
-Copyright = '(c) 2017 William T Jones. All rights reserved.'
+Copyright = '(c) 2018 William T Jones. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'PSCode launches VS Code in a PowerShell context to avoid the limitations of cmd.exe and UNC paths. The familiar code command is aliased.'
@@ -119,7 +119,7 @@ PrivateData = @{
         # ExternalModuleDependencies = @()
 
     } # End of PSData hashtable
-    
+
  } # End of PrivateData hashtable
 
 # HelpInfo URI of this module
