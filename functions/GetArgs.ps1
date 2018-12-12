@@ -10,18 +10,20 @@ Input arguments as an array of objects
 #>
 function GetArgs($resourcePath, [object[]]$allArgs) {
 
-    # Array-type elements should be pulled up and flattened to allow for Get-Item inputs
+    # Attempt to flatten array and object type elements by resolving
     $flattenedArgs = @()
 
-    $allArgs | %{
-        if ($_ -is [Array]) {
-            $_ | %{ $flattenedArgs += [string]$_}
-        } else {
-            $flattenedArgs += [string]$_
+    foreach ($curArg in $allArgs) {
+        $resolved = (Resolve-Path $curArg -ea si | Convert-Path)
+        if ($resolved) {
+            $flattenedArgs += $resolved
+        }
+        else {
+            $flattenedArgs += [string]$curArg
         }
     }
 
-    $allArgsQuoted = $flattenedArgs | %{
+    $allArgsQuoted = $flattenedArgs | % {
         if ($_ -like '* *') {'"{0}"' -f $_ } else {$_}
     }
 

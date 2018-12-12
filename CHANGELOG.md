@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
+## [1.0.9] - 2018-12-11
+### Added
+- Close [#9](https://github.com/wtjones/PSCode/issues/9) Support path resolution to allow for wildcards.
+
 ## [1.0.8] - 2018-12-04
 ### Changed
 - Close [#10](https://github.com/wtjones/PSCode/issues/10) Passing an array of files behaves differently than code.exe

@@ -4,7 +4,7 @@ PSCode
 Overview
 --------
 
-[VS Code](https://code.visualstudio.com/) currently uses `code.cmd` for shell duties. The drawback is [this issue](https://github.com/Microsoft/vscode/issues/14529), related to the limitations of `cmd.exe` and UNC paths. 
+[VS Code](https://code.visualstudio.com/) currently uses `code.cmd` for shell duties. The drawback is [this issue](https://github.com/Microsoft/vscode/issues/14529), related to the limitations of `cmd.exe` and UNC paths.
 
 PSCode aliases the familar `code` to run a cmdlet that launches the editor in a powershell context. The behavior of `code.cmd` is maintained (as of 1.19.1).
 
@@ -44,6 +44,20 @@ Try it from a network path:
 
 ```
 code \\MyNas\docs
+```
+
+
+### Other features
+
+In addition, `Resolve-Path` is used to allow for wildcards and `Array`/`Object` inputs:
+
+```
+code *.txt
+```
+
+```
+$files = (Get-Item *.txt)
+code $files
 ```
 
 

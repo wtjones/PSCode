@@ -5,11 +5,11 @@ function Invoke-VSCode() {
     [CmdletBinding()]
     param (
         [Parameter(
-            mandatory=$false,
+            Mandatory=$false,
             ValueFromPipeline=$true)]
         [object]$inputObject,
         [Parameter(
-            mandatory=$false,
+            Mandatory=$false,
             Position=0,
             ValueFromRemainingArguments=$true)]
         [object[]]$allArgs=@()

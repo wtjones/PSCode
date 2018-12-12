@@ -8,6 +8,7 @@ function SetupDrive {
     mkdir 'TestDrive:\ArgsTest'
     echo '' > 'TestDrive:\ArgsTest\a.txt'
     echo '' > 'TestDrive:\ArgsTest\b.txt'
+    echo '' > 'TestDrive:\ArgsTest\c.txt'
 }
 
 $rcPath = 'RC'
@@ -30,10 +31,20 @@ Describe "GetArgs" {
     $files = (get-item 'TestDrive:\ArgsTest\*')
     $result = GetArgs $rcPath @('a.txt', $files)
     It "Should flatten array" {
-        $result | Should Be @($rcPathResult, 'a.txt', $files[0].FullName, $files[1].FullName)
+        $result | Should Be @($rcPathResult, 'a.txt', $files[0].FullName, $files[1].FullName, $files[2].FullName)
         # Posh will give equality between a file object and the file's FullName,
         # so ensure that we only have strings.
         $result[2] -is [string] -and $result[3] -is [string] | Should Be $true
         Write-host ($result | ConvertTo-Json)
     }
+
+    $result = GetArgs $rcPath @('a.txt', 'TestDrive:\ArgsTest\*')
+    It "Should resolve a glob input" {
+        $result | Should Be @($rcPathResult, 'a.txt', $files[0].FullName, $files[1].FullName, $files[2].FullName)
+        # Posh will give equality between a file object and the file's FullName,
+        # so ensure that we only have strings.
+        $result[2] -is [string] -and $result[3] -is [string] | Should Be $true
+        Write-host ($result | ConvertTo-Json)
+    }
+
 }
