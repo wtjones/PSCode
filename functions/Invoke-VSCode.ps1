@@ -19,7 +19,7 @@ function Invoke-VSCode() {
 
         $codePath = join-path $script:vscodePath 'code.exe'
         $resourcePath = join-path $script:vscodePath 'resources\app\out\cli.js'
-
+        $allArgs = $allArgs + "--ms-enable-electron-run-as-node"
         $codeArgs = GetArgs $resourcePath $allArgs
         Write-Verbose ("Launching VSCode with args:`n{0}" -f ($codeArgs | convertTo-json))
     }
