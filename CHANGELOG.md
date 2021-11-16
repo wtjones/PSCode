@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+- Close [#8](https://github.com/wtjones/PSCode/issues/8) Support user setup installs of VS Code.
 - Close [#12](https://github.com/wtjones/PSCode/issues/12) Add required flag due to VS Code [change](https://github.com/microsoft/vscode/commit/ac29daaf3b35fe21fb9121312b1f37851d650ce8#diff-1ef567484ecf02ec85fee5ee2c20c6d7ce41c88065e405874a1066cfc7b837f2).
 
 ## [1.0.9] - 2018-12-11
